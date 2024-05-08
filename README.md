@@ -4,12 +4,11 @@ Hey there! Welcome to my portfolio. 🚀 Here's where I showcase some of the coo
 
 ## About Me
 
-I'm a [Your Profession] based in [Your Location]. I'm passionate about [Your Passion] and love building [Your Interest]. When I'm not coding, you can find me [Your Hobby].
+I'm a **Full stack Developer** based in **Nigeria**.
 
-- **Email:** Your email address
-- **LinkedIn:** Link to your LinkedIn profile
-- **GitHub:** Link to your GitHub profile
-- **Twitter:** Link to your Twitter profile
+- **[a link](# Email)**
+- **[a link](# LinkedIn)**
+- **[a link](# Github)**
 
 ## Let's Collaborate!
 
