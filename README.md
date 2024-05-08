@@ -2,14 +2,6 @@
 
 Hey there! Welcome to my portfolio. 🚀 Here's where I showcase some of the cool projects I've been working on. Take a look around and feel free to reach out if you have any questions or just want to chat!
 
-## About Me
-
-I'm a **Full stack Developer** based in **Nigeria**.
-
-- **[a link](# Email)**
-- **[a link](# LinkedIn)**
-- **[a link](# Github)**
-
 ## Let's Collaborate!
 
 I'm always open to collaboration opportunities, whether it's for coding projects, writing articles, or just bouncing ideas off each other. Feel free to reach out, and let's create something awesome together!
