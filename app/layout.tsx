@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { NTR } from "next/font/google";
 import "./globals.css";
 import Navbar from "./component/Navbar";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 
 const font = NTR({ subsets: ["latin"], weight: "400" });
 
@@ -20,8 +21,8 @@ export const metadata: Metadata = {
     description: "Portfolio",
     images: "logo.svg",
   },
+  // metadataBase: "https://your-website-url.com", // Set metadataBase to your website's base URL
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -30,8 +31,15 @@ export default function RootLayout({
   return (
     <html lang="en" className={font.className} suppressHydrationWarning>
       <body className="bg-[#0a192f] mx-auto">
-        <Navbar />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

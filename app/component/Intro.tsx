@@ -1,4 +1,9 @@
-import FractalTree from "./FractualTree";
+import dynamic from "next/dynamic";
+// import FractalTree from "./FractualTree";
+
+const FractalTree = dynamic(() => import("@/app/component/FractualTree"), {
+  ssr: false,
+});
 
 function Intro() {
   return (
