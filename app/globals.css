@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+#fractal-tree .p5Canvas {
+  width: 250px !important;
+  height: 100% !important;
+}
+
+@media only screen and (max-width: 600px) {
+  #fractal-tree .p5Canvas {
+    width: 150px !important;
+    height: 100% !important;
+  }
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
