@@ -1,6 +1,5 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
-import { ThemeToggle } from "./ThemeToggle";
 import { cn } from "@/lib/utils";
 
 function Navbar() {
@@ -43,7 +42,6 @@ function Navbar() {
           >
             <Linkedin className="h-5 w-5 transition hover:text-[#64ffda]" />
           </Link>
-          {/* <ThemeToggle /> */}
         </div>
       </div>
     </nav>
