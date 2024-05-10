@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "./component/Navbar";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { cn } from "@/lib/utils";
+import { TracingBeam } from "@/components/ui/tracing-beam";
 
 const font = NTR({ subsets: ["latin"], weight: "400" });
 
@@ -31,16 +32,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className} suppressHydrationWarning>
-      <body className={cn("mx-auto bg-white dark:bg-[#0a192f] ")}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Navbar />
-          {children}
-        </ThemeProvider>
+      <body className=" bg-[#0a192f] ">
+        <Navbar />
+        {children}
       </body>
     </html>
   );
