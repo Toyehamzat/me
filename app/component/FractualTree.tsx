@@ -12,14 +12,20 @@ const Sketch = (p5: any) => {
   p5.draw = () => {
     p5.clear();
     p5.translate(200, p5.height);
-    angle = p5.map(p5.sin(p5.frameCount * 0.01), -1, 1, p5.PI / 2, p5.PI / 16); // vary the angle using sin()
+    angle = p5.map(
+      p5.sin(p5.frameCount * 0.01),
+      -1,
+      1.2,
+      p5.PI / 2,
+      p5.PI / 32
+    ); // vary the angle using sin()
     branch(100);
   };
 
   function branch(len: number) {
-    p5.line(4, 4, 4, -len);
-    p5.translate(1, -len);
-    if (len > 2) {
+    p5.line(0, 0, 0, -len);
+    p5.translate(0, -len);
+    if (len > 4) {
       p5.push();
       p5.rotate(angle);
       branch(len * 0.67);
@@ -33,7 +39,7 @@ const Sketch = (p5: any) => {
 };
 
 const FractalTree = () => (
-  <div className="pb-20">
+  <div id="fractal-tree" className="pb-20">
     <ReactP5Wrapper sketch={Sketch} />
   </div>
 );
