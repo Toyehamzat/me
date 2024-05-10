@@ -3,6 +3,7 @@ import { NTR } from "next/font/google";
 import "./globals.css";
 import Navbar from "./component/Navbar";
 import { ThemeProvider } from "@/components/providers/theme-provider";
+import { cn } from "@/lib/utils";
 
 const font = NTR({ subsets: ["latin"], weight: "400" });
 
@@ -30,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className} suppressHydrationWarning>
-      <body className="bg-[#0a192f] mx-auto">
+      <body className={cn("mx-auto bg-white dark:bg-[#0a192f] ")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
