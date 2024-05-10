@@ -1,10 +1,15 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { ThemeToggle } from "./ThemeToggle";
+import { cn } from "@/lib/utils";
 
 function Navbar() {
   return (
-    <nav className="text-[#ccd6f6] font-bold fixed w-full h-14 shadow-sm flex items-center">
+    <nav
+      className={cn(
+        "text-[#ccd6f6]  font-bold fixed w-full h-14 shadow-sm flex items-center"
+      )}
+    >
       <div className="md:max-w-screen-xl mx-auto flex items-center w-full justify-between">
         <div className="w-2/5 flex space-x-8 ">
           <div className="cursor-pointer text-xl tracking-widest font-extrabold">
@@ -38,7 +43,7 @@ function Navbar() {
           >
             <Linkedin className="h-5 w-5 transition hover:text-[#64ffda]" />
           </Link>
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
         </div>
       </div>
     </nav>

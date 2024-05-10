@@ -23,7 +23,7 @@ const Sketch = (p5: any) => {
   };
 
   function branch(len: number) {
-    p5.line(0, 0, 0, -len);
+    p5.line(4, 4, 4, -len);
     p5.translate(0, -len);
     if (len > 4) {
       p5.push();
@@ -39,7 +39,7 @@ const Sketch = (p5: any) => {
 };
 
 const FractalTree = () => (
-  <div id="fractal-tree" className="pb-20">
+  <div id="fractal-tree" className="pb-5">
     <ReactP5Wrapper sketch={Sketch} />
   </div>
 );
