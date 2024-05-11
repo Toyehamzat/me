@@ -11,15 +11,15 @@ const FractalTree = dynamic(() => import("@/app/component/FractualTree"), {
 const words = [
   {
     text: "hi,",
-    className: "text-7xl text-[#ccd6f6]",
+    className: "text-4xl md:text-7xl text-[#ccd6f6]",
   },
   {
     text: "hamzat",
-    className: " text-7xl text-[#64ffda] font-bold",
+    className: " text-4xl md:text-7xl text-[#64ffda] font-bold",
   },
   {
     text: "here.",
-    className: "text-7xl text-[#ccd6f6]",
+    className: "text-4xl md:text-7xl text-[#ccd6f6]",
   },
 ];
 function Intro() {
@@ -29,10 +29,10 @@ function Intro() {
       <Reveal>
         <TypewriterEffectSmooth words={words} />
         <div className="flex flex-col text-center items-center m-auto">
-          <div className="text-center text-[#8892b0] text-5xl">
+          <div className="text-center text-[#8892b0] text-3xl sm:text-5xl">
             I create stuff sometimes.
           </div>
-          <div className="text-[#8892b0] text-2xl text-center max-w-screen-sm mb-5">
+          <div className="text-[#8892b0] text-xl sm:text-2xl text-center max-w-screen-sm mb-5">
             I&apos;m a Lagos-based software engineer passionate about crafting
             impactful products. With a dedication to innovation and a knack for
             problem-solving, I thrive on challenges and turning ideas into
