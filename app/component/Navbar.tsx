@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav
       className={cn(
-        "text-[#ccd6f6]  font-bold fixed w-full h-14 shadow-sm flex items-center"
+        "text-[#ccd6f6]  font-bold fixed w-full h-14 shadow-sm flex items-center z-40"
       )}
     >
       <div className="md:max-w-screen-xl mx-auto flex items-center w-full justify-between">
