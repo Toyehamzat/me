@@ -1,12 +1,5 @@
-"use client";
 import React, { useEffect, useRef, useState } from "react";
-import {
-  motion,
-  useTransform,
-  useScroll,
-  useVelocity,
-  useSpring,
-} from "framer-motion";
+import { motion, useSpring, useScroll, useTransform } from "framer-motion";
 import { cn } from "@/utils/cn";
 
 export const TracingBeam = ({
@@ -29,7 +22,7 @@ export const TracingBeam = ({
     if (contentRef.current) {
       setSvgHeight(contentRef.current.offsetHeight);
     }
-  }, []);
+  }, [children]); // Update height when children change
 
   const y1 = useSpring(
     useTransform(scrollYProgress, [0, 0.8], [50, svgHeight]),
@@ -51,7 +44,7 @@ export const TracingBeam = ({
       ref={ref}
       className={cn("relative w-full max-w-7xl mx-auto h-full", className)}
     >
-      <div className="absolute -left-4 md:-left-72 top-12">
+      <div className="absolute -left-4 md:-left-72 top-14 sm:top-12">
         <motion.div
           transition={{
             duration: 0.2,
@@ -63,7 +56,7 @@ export const TracingBeam = ({
                 ? "none"
                 : "rgba(0, 0, 0, 0.24) 0px 3px 8px",
           }}
-          className="ml-[27px] h-4 w-4 rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
+          className="md:ml-[27px] md:h-4 md:w-4 w-2 h-2 ml-[30.3px] rounded-full border border-netural-200 shadow-sm flex items-center justify-center"
         >
           <motion.div
             transition={{
