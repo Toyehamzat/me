@@ -27,15 +27,15 @@ function Intro() {
       <Reveal>
         <TypewriterEffectSmooth words={words} />
         <div className="flex flex-col text-center items-center m-auto">
-          <div className="text-center text-[#8892b0] pt-[-20%] text-5xl">
+          <div className="text-center text-[#8892b0] text-5xl">
             I create stuff sometimes.
           </div>
           <div className="text-[#8892b0] text-2xl text-center max-w-screen-sm">
             I&apos;m a Lagos-based software engineer passionate about crafting
-            impactful products. With a track record of contributing to major
-            feature launches and apps with 100M+ installs, I thrive on
-            challenges and turning ideas into reality. Let&apos;s build
-            something amazing together!
+            impactful products. With a dedication to innovation and a knack for
+            problem-solving, I thrive on challenges and turning ideas into
+            reality. Let&apos;s collaborate and create something extraordinary
+            together!
           </div>
         </div>
       </Reveal>
