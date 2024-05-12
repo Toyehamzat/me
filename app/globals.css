@@ -13,6 +13,28 @@
     height: 100% !important;
   }
 }
+
+.section-header {
+  display: flex;
+  padding-bottom: 42px;
+  width: 100vw;
+}
+
+.section-header::after {
+  content: "";
+  display: block;
+  width: 300px;
+  margin-top: 39px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: #233554;
+}
+.section-title {
+  color: #8892b0;
+  font-size: 46px;
+  font-weight: bold;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -83,5 +105,19 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .section-header {
+    width: unset;
+  }
+
+  .section-header::after {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 32px;
   }
 }
