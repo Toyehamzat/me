@@ -9,7 +9,7 @@ function Navbar() {
         "text-[#ccd6f6] backdrop-blur-xl font-bold fixed w-full h-14 shadow-sm flex items-center z-40"
       )}
     >
-      <div className="max-w-screen-xl mx-auto flex items-center w-full justify-between px-7 sm:px-4 md:px-0">
+      <div className="max-w-screen-xl mx-auto flex items-center w-full justify-between px-7 sm:px-4 xl:px-0">
         <div className="w-2/5 flex space-x-8 ">
           <div className="cursor-pointer text-xl tracking-widest font-extrabold">
             Hamzat
