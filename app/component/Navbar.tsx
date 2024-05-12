@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 
 function Navbar() {
   return (
@@ -10,10 +11,19 @@ function Navbar() {
       )}
     >
       <div className="max-w-screen-xl mx-auto flex items-center w-full justify-between px-7 sm:px-4 xl:px-0">
-        <div className="w-2/5 flex space-x-8 ">
-          <div className="cursor-pointer text-xl tracking-widest font-extrabold">
-            Hamzat
+        <div className="w-2/5 flex space-x-5 ">
+          <div className="m-0 flex justify-center text-center">
+            <HoverBorderGradient
+              containerClassName="rounded-full"
+              as="button"
+              className="bg-black  flex items-center"
+            >
+              <div className="cursor-pointer text-xl tracking-widest font-extrabold">
+                Hamzat
+              </div>
+            </HoverBorderGradient>
           </div>
+
           <div className="space-x-4 md:w-auto hidden sm:flex items-center justify-between w-full ">
             <div className=" transition hover:text-[#64ffda] cursor-pointer">
               Home
