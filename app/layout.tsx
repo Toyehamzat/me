@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className} suppressHydrationWarning>
-      <body className=" bg-black ">
+      <body className=" bg-[#0a192f] ">
         <Navbar />
         {children}
       </body>
