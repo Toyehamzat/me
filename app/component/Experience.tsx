@@ -1,5 +1,6 @@
 import Reveal from "@/utils/Reaveal";
 import React from "react";
+import { JobList } from "./JobList";
 
 function Experience() {
   return (
@@ -8,6 +9,7 @@ function Experience() {
         <div className="section-header">
           <span className="section-title">/ Experience</span>
         </div>
+        <JobList />
       </Reveal>
     </div>
   );
