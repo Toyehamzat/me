@@ -1,61 +1,60 @@
 import { Tabs } from "@/components/ui/Tabs";
+import Reveal from "@/utils/Reaveal";
 
 export function JobList() {
-  const tabs = [
-    {
-      title: "PRODUCT",
-      value: "product",
+  const experienceItems = {
+    "4Traderx": {
+      jobTitle: "Software Development Engineer intern @",
+      duration: "JAN 2023 - JULY 2023",
+      desc: [
+        "Worked as a Front-end Developer by developing and debugging user interface components while also facilitating connections to our database.",
+        "Collaborated with the development team to conceptualize, design and develop the product.",
+        "Created fully responsive UI components for various pages of our web application using JavaScript’s React.js library.",
+      ],
+    },
+    Testing: {
+      jobTitle: "Software Development Engineer intern @",
+      duration: "MAY 2024 - PRESENT",
+      desc: [
+        "loren esplum bla bla bla bkla blagfgbygn fnq ufhq3i daw jf fhcqnhjef.",
+        "bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.",
+      ],
+    },
+  };
+
+  const tabs = Object.entries(experienceItems).map(
+    ([company, { jobTitle, duration, desc }]) => ({
+      title: company.toUpperCase().replace(/\s+/g, "-"),
+      value: company.toUpperCase().replace(/\s+/g, "-"), // Convert company name to lowercase and replace spaces with dashes
       content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0a192f]">
-          <p>Product Tab</p>
-          <div className="h-[60%] md:h-[90%] rounded-xl"></div>
+        <div className="w-full sm:w-[90%] overflow-hidden relative h-full rounded-2xl sm:pr-10 sm:pl-10 sm:pb-10 pl-5 pr-5 pb-5   font-bold text-[#8892b0] bg-black">
+          <p className="text-xl sm:text-2xl font-bold text-[#ccd6f6]">
+            {jobTitle}
+            <span className="text-[#64ffda]"> {company}</span>
+          </p>
+          <p>{duration}</p>
+          <Reveal>
+            <ul className="list-none pt-5 text-[17px] sm:text-[18px]">
+              {desc.map((item, index) => (
+                <li className="relative pl-5" key={index}>
+                  <span
+                    className="absolute left-0 top-0.5"
+                    style={{ color: "#64ffda" }}
+                  >
+                    ▹
+                  </span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
         </div>
       ),
-    },
-    {
-      title: "SERVICES",
-      value: "services",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0a192f]">
-          <p>Services tab</p>
-          <div className="h-[60%] md:h-[90%] rounded-xl"></div>
-        </div>
-      ),
-    },
-    {
-      title: "CUSTOMER",
-      value: "customer",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0a192f]">
-          <p>customer tab</p>
-          <div className="h-[60%] md:h-[90%] rounded-xl"></div>
-        </div>
-      ),
-    },
-    {
-      title: "PLAYGROUND",
-      value: "playground",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0a192f]">
-          <p>playground tab</p>
-          <div className="h-[60%] md:h-[90%] rounded-xl"></div>
-        </div>
-      ),
-    },
-    {
-      title: "TESTING",
-      value: "testing",
-      content: (
-        <div className="w-full overflow-hidden relative h-full rounded-2xl p-10 text-xl md:text-4xl font-bold text-white bg-[#0a192f]">
-          <p>testing tab</p>
-          <div className="h-[60%] md:h-[90%] rounded-xl"></div>
-        </div>
-      ),
-    },
-  ];
+    })
+  );
 
   return (
-    <div className="h-[40rem] sm:h-[20rem] [perspective:1000px] relative b flex flex-col sm:flex-row  md:max-w-screen-xl mx-auto w-full  items-start justify-start ">
+    <div className="h-[40rem] sm:h-[20rem] perspective:1000px relative b flex flex-col sm:flex-row md:max-w-screen-xl mx-auto w-full items-start justify-start">
       <Tabs tabs={tabs} />
     </div>
   );
