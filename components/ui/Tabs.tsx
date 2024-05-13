@@ -40,7 +40,7 @@ export const Tabs = ({
     <>
       <div
         className={cn(
-          "flex flex-col items-start justify-start [perspective:1000px] relative h-auto md:max-w-[300px] w-full mr-2 mb-2",
+          "flex flex-col items-start justify-start [perspective:1000px] relative h-auto border-r-2 border-[#233554] md:max-w-[300px] w-full mr-2 mb-2",
           containerClassName
         )}
       >
@@ -65,19 +65,20 @@ export const Tabs = ({
                 layoutId="clickedbutton"
                 transition={{ type: "spring", bounce: 0.3, duration: 0.6 }}
                 className={cn(
-                  "absolute inset-0 bg-transparent", // Remove rounded-full class
-                  "border-r-2 rounded-r-md", // Apply borders only to left, top, and bottom
-                  "border-[#64ffda]", // Adjust border color as needed
+                  "absolute inset-0 bg-transparent",
+                  "border-r-2 ",
+                  "border-[#64ffda] text-[#64ffda]",
                   activeTabClassName
                 )}
               />
             )}
-
             <span
               className={cn(
-                "relative block text-[#8892b0] text-[18px]",
-                activeTabClassName,
-                { "text-[#64ffda]": active } // Apply text-black class when isActive is true
+                "relative block text-[18px]",
+                active.value === tab.value
+                  ? "text-[#64ffda]"
+                  : "text-[#8892b0]",
+                activeTabClassName
               )}
             >
               {tab.title}
@@ -123,7 +124,7 @@ export const FadeInDiv = ({
             opacity: idx < 3 ? 1 - idx * 0.1 : 0,
           }}
           animate={{
-            y: isActive(tab) ? [0, 40, 0] : 0,
+            y: isActive(tab) ? [0, 10, 0] : 0,
           }}
           className={cn("w-full h-full absolute top-0 left-0", className)}
         >
