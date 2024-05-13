@@ -65,7 +65,7 @@ function About() {
             {two}
           </div>
           <div className="h-[20rem] w-full  items-center justify-center pl-9 hidden md:flex ">
-            <PinContainer title="Lagos,Nigeria." href="#">
+            <PinContainer title="Nigeria." href="#">
               <div className="flex basis-full flex-col p-4 tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
                 <h3 className="max-w-xs !pb-2 !m-0 font-bold  text-base text-slate-100">
                   Aceternity UI ofc
