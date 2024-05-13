@@ -42,7 +42,7 @@ function Intro() {
           <Link href="mailto:anibiseun@gmail.com">
             <button className="p-[3px] relative">
               <div className="absolute inset-0 bg-gradient-to-r from-[#64ffda] to-[#e6f1ff] rounded-lg" />
-              <div className="px-8 py-4 flex items-center gap-1 text-center bg-[#0a192f] text-2xl cursor-pointer font-extrabold rounded-[6px] text-[#64ffda] hover:bg-[#233554]  relative group transition duration-200">
+              <div className="px-8 py-4 flex items-center gap-1 text-center bg-black text-2xl cursor-pointer font-extrabold rounded-[6px] text-[#64ffda] hover:bg-[#233554]  relative group transition duration-200">
                 <Mail className="h-5 w-7" />
                 {"Say hi!"}
               </div>
