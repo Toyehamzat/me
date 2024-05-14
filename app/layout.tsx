@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { NTR } from "next/font/google";
 import "./globals.css";
-import Navbar from "./component/Navbar";
+import { Navbar } from "./component/Navbar";
 import Footer from "./component/footer";
 
 const font = NTR({ subsets: ["latin"], weight: "400" });
@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={font.className} suppressHydrationWarning>
-      <body className=" bg-black ">
+      <body className=" bg-black !scroll-smooth ">
         <Navbar />
         {children}
         <Footer />
