@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { NTR } from "next/font/google";
 import "./globals.css";
 import Navbar from "./component/Navbar";
-import { ThemeProvider } from "@/components/providers/theme-provider";
-import { cn } from "@/lib/utils";
-import { TracingBeam } from "@/components/ui/tracing-beam";
+import Footer from "./component/footer";
 
 const font = NTR({ subsets: ["latin"], weight: "400" });
 
@@ -18,11 +16,11 @@ export const metadata: Metadata = {
       href: "/Logo.ico",
     },
   ],
-  openGraph: {
-    title: "Anibi Adetoye Hamzat",
-    description: "Portfolio",
-    images: "logo.svg",
-  },
+  // openGraph: {
+  //   title: "Anibi Adetoye Hamzat",
+  //   description: "Portfolio",
+  //   images: "logo.svg",
+  // },
   // metadataBase: "https://your-website-url.com", // Set metadataBase to your website's base URL
 };
 export default function RootLayout({
@@ -35,6 +33,7 @@ export default function RootLayout({
       <body className=" bg-black ">
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
