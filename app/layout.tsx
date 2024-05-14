@@ -16,12 +16,17 @@ export const metadata: Metadata = {
       href: "/Logo.ico",
     },
   ],
-  // openGraph: {
-  //   title: "Anibi Adetoye Hamzat",
-  //   description: "Portfolio",
-  //   images: "logo.svg",
-  // },
-  // metadataBase: "https://your-website-url.com", // Set metadataBase to your website's base URL
+  openGraph: {
+    title: "Anibi Adetoye Hamzat",
+    description: "Portfolio",
+    url: "https://tazmaheyot.vercel.app",
+    images: {
+      url: "image/tim-mossholder-tq8Cuap8_wY-unsplash.jpg",
+      width: 1260,
+      height: 800,
+      alt: "Anibi Adetoye Hamzat",
+    },
+  },
 };
 export default function RootLayout({
   children,
