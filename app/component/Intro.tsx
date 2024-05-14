@@ -30,7 +30,7 @@ function Intro() {
         <TypewriterEffectSmooth words={words} />
         <div className="flex flex-col text-center items-center m-auto">
           <div className="text-center text-[#8892b0] text-3xl sm:text-5xl">
-            I create stuff sometimes.
+           One line at a time.
           </div>
           <div className="text-[#8892b0] text-xl sm:text-2xl text-center max-w-screen-sm mb-5">
             I&apos;m a Lagos-based software engineer passionate about crafting
