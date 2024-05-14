@@ -23,6 +23,7 @@
     "react-dom": "^18",
     "react-element-to-jsx-string": "^15.0.0",
     "react-p5-wrapper": "^4.1.2",
+    "react-scroll-into-view": "^2.1.2",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",
     "typewriter-effect": "^2.21.0"
