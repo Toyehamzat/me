@@ -1,7 +1,8 @@
-import Reveal from "@/utils/Reaveal";
 import React from "react";
+import Reveal from "@/utils/Reaveal";
 import { CarouselPlugin } from "./ImageSlider";
 import { HoverEffect } from "@/components/ui/card-hover-effect";
+import { useNavbarRefs } from "@/lib/useNavbarRefs";
 
 function Pet() {
   const projects = [
@@ -36,9 +37,8 @@ function Pet() {
       link: "#",
     },
   ];
-
   return (
-    <div className="min-h-[50vh] md:max-w-screen-xl pt-16 pb-24">
+    <div id="projects" className="min-h-[50vh] md:max-w-screen-xl pt-16 pb-24">
       <Reveal>
         <div className="section-header">
           <span className="section-title">/ Pet Projects</span>

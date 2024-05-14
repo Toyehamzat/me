@@ -1,9 +1,15 @@
+"use client";
 import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import ScrollIntoView from "react-scroll-into-view";
 
-function Navbar() {
+export const Navbar = () => {
+  const scrollToHome = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <nav
       className={cn(
@@ -11,7 +17,7 @@ function Navbar() {
       )}
     >
       <div className="max-w-screen-xl mx-auto flex items-center w-full justify-between px-7 sm:px-4 xl:px-0">
-        <div className="w-2/5 flex space-x-5 ">
+        <div className="w-2/5 flex space-x-5">
           <div className="m-0 flex justify-center text-center">
             <HoverBorderGradient
               containerClassName="rounded-full"
@@ -25,18 +31,27 @@ function Navbar() {
           </div>
 
           <div className="space-x-4 md:w-auto hidden sm:flex items-center justify-between w-full ">
-            <div className=" transition hover:text-[#64ffda] cursor-pointer">
+            <div
+              className="transition hover:text-[#64ffda] cursor-pointer"
+              onClick={scrollToHome}
+            >
               Home
             </div>
-            <div className=" transition hover:text-[#64ffda] cursor-pointer">
-              About
-            </div>
-            <div className=" transition hover:text-[#64ffda] cursor-pointer">
-              Experience
-            </div>
-            <div className=" transition hover:text-[#64ffda] cursor-pointer">
-              Projects
-            </div>
+            <ScrollIntoView selector="#about">
+              <div className="transition hover:text-[#64ffda] cursor-pointer">
+                About
+              </div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#experience">
+              <div className="transition hover:text-[#64ffda] cursor-pointer">
+                Experience
+              </div>
+            </ScrollIntoView>
+            <ScrollIntoView selector="#projects">
+              <div className="transition hover:text-[#64ffda] cursor-pointer">
+                Projects
+              </div>
+            </ScrollIntoView>
           </div>
         </div>
         <div className="relative space-x-4 w-auto flex items-center justify-between">
@@ -56,6 +71,4 @@ function Navbar() {
       </div>
     </nav>
   );
-}
-
-export default Navbar;
+};

@@ -29,9 +29,8 @@ export function CarouselPlugin() {
     },
     "Apple-ology": {
       title: "apple-ology",
-      desc: "A three.js simulation of the planet system revolving around a monolith.",
-      techStack:
-        "an E-commerce application for apple devices(uses local storagge).",
+      desc: "an E-commerce application for apple devices(uses local storagge).",
+      techStack: "REACT.JS",
       link: "https://github.com/Toyehamzat/Apple-ology.git",
       open: "apple-ology.vercel.app/",
       image: "/image/appleology.jpg",
