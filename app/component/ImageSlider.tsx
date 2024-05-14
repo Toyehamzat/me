@@ -49,7 +49,7 @@ export function CarouselPlugin() {
     <>
       <Carousel
         plugins={[plugin.current]}
-        className="w-[90%] hidden md:block mx-auto"
+        className="w-[90%] hidden md:block mx-auto "
         onMouseEnter={plugin.current.stop}
         onMouseLeave={plugin.current.reset}
       >
@@ -57,7 +57,7 @@ export function CarouselPlugin() {
           {Object.values(spotlightProjects).map((project, index) => (
             <CarouselItem key={index}>
               <div
-                className=" bg-cover bg-center rounded-3xl relative"
+                className=" bg-cover bg-center rounded-3xl relative border border-zinc-800"
                 style={{ backgroundImage: `url(${project.image})` }}
               >
                 <div className="block absolute inset-0 w-full h-full bg-black/40 z-10 transition duration-500" />

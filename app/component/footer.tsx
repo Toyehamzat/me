@@ -41,7 +41,7 @@ function Footer() {
             <div className="w-full items-center justify-center  flex gap-2 flex-wrap py-1 md:py-3">
               {socials.map((social, i) => (
                 <a key={i} href={`${social.url}`} target="_blank">
-                  <div className=" p-2 md:p-3 rounded-lg border border-[#64ffda] -800transition-colors duration-300">
+                  <div className=" p-2 md:p-3 rounded-lg border border-zinc-800 transition-colors duration-300">
                     {social.icon}
                   </div>
                 </a>
