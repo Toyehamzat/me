@@ -57,17 +57,21 @@ export const Navbar = () => {
           </div>
         </div>
         <div className="relative space-x-4 w-auto flex items-center justify-between">
-          <Link href="mailto:anibiseun@gmail.com">
+          <Link className="hidden sm:block" href="mailto:anibiseun@gmail.com">
             <Mail className="h-5 w-5 transition hover:text-[#64ffda] " />
-          </Link>
-          <Link href="tel:+2349134454880" target="_blank">
-            <HiOutlinePhone className="h-5 w-5 transition hover:text-[#64ffda]" />
           </Link>
           <Link href="https://github.com/Toyehamzat" target="_blank">
             <Github className="h-5 w-5 transition hover:text-[#64ffda]" />
           </Link>
-          <Link href="https://twitter.com/tazmaheyot" target="_blank">
+          <Link
+            className="hidden sm:block"
+            href="https://twitter.com/tazmaheyot"
+            target="_blank"
+          >
             <IoLogoTwitter className="h-5 w-5 transition hover:text-[#64ffda]" />
+          </Link>
+          <Link href="tel:+2349134454880" target="_blank">
+            <HiOutlinePhone className="h-5 w-5 transition hover:text-[#64ffda]" />
           </Link>
           <Link
             href="https://www.linkedin.com/in/adetoye-anibi-32830823b"
