@@ -78,7 +78,7 @@ export function CarouselPlugin() {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-[#ccd6f6] font-boldtext-[11px] sm:text-[18px] hover:underline"
+                        className="text-[#ccd6f6] font-bold text-[11px] sm:text-[18px] hover:underline"
                       >
                         <Github />
                       </a>
