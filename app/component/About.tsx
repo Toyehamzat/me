@@ -1,6 +1,6 @@
+import React from "react";
 import { PinContainer } from "@/components/ui/PinContainer";
 import Reveal from "@/utils/Reaveal";
-import React from "react";
 
 function About() {
   const one = (
@@ -16,9 +16,9 @@ function About() {
   );
   const two = (
     <p className="pt-4">
-      Outside of coding, I&apos;m interested in following the developments of
-      science. I also play a lot of video games, listen to vaious kind of music.
-      And consume healthy media.
+      Outside of coding, I keenly follow the developments in the world of
+      science, play a video games, listen to several genre of music, and consume
+      healthy media.
     </p>
   );
 
@@ -32,7 +32,10 @@ function About() {
     "Javascript ES6+",
   ];
   return (
-    <div className="min-h-[55vh] justify-center md:max-w-screen-xl pt-24">
+    <div
+      id="about"
+      className="relative min-h-[55vh] justify-center md:max-w-screen-xl pt-24"
+    >
       <Reveal>
         <div className="section-header">
           <span className="section-title">/ about me</span>
