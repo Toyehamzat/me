@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "Portfolio",
     url: "https://tazmaheyot.vercel.app",
     images: {
-      url: "image/tim-mossholder-tq8Cuap8_wY-unsplash.jpg",
+      url: "https://unsplash.com/photos/red-blue-and-yellow-abstract-painting-tq8Cuap8_wY",
       width: 1260,
       height: 800,
       alt: "Anibi Adetoye Hamzat",
