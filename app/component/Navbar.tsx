@@ -1,11 +1,11 @@
 "use client";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import ScrollIntoView from "react-scroll-into-view";
 import { HiOutlinePhone } from "react-icons/hi";
-import { IoLogoTwitter } from "react-icons/io5";
+import { IoLogoGithub, IoLogoTwitter } from "react-icons/io5";
 
 export const Navbar = () => {
   const scrollToHome = () => {
@@ -61,7 +61,7 @@ export const Navbar = () => {
             <Mail className="h-5 w-5 transition hover:text-[#64ffda] " />
           </Link>
           <Link href="https://github.com/Toyehamzat" target="_blank">
-            <Github className="h-5 w-5 transition hover:text-[#64ffda]" />
+            <IoLogoGithub className="h-5 w-5 transition hover:text-[#64ffda]" />
           </Link>
           <Link
             className="hidden sm:block"

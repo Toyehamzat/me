@@ -12,14 +12,6 @@ export function JobList() {
         "Created fully responsive UI components for various pages of our web application using JavaScript’s React.js library.",
       ],
     },
-    Testing: {
-      jobTitle: "Software Development Engineer intern @",
-      duration: "MAY 2024 - PRESENT",
-      desc: [
-        "loren esplum bla bla bla bkla blagfgbygn fnq ufhq3i daw jf fhcqnhjef.",
-        "bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.",
-      ],
-    },
   };
 
   const tabs = Object.entries(experienceItems).map(

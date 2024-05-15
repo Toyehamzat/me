@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import Reveal from "@/utils/Reaveal";
-import { Mail, MailPlus } from "lucide-react";
+import { Mail } from "lucide-react";
 import Link from "next/link";
 
 const FractalTree = dynamic(() => import("@/app/component/FractualTree"), {

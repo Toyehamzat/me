@@ -1,7 +1,6 @@
 import React from "react";
 import Reveal from "@/utils/Reaveal";
 import { JobList } from "./JobList";
-import { useNavbarRefs } from "@/lib/useNavbarRefs";
 
 function Experience() {
   return (
