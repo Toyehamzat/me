@@ -1,7 +1,9 @@
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
+import { FolderClosed } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { IoLogoGithub } from "react-icons/io5";
 
 export const HoverEffect = ({
   items,
@@ -11,6 +13,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    techStack?: string;
   }[];
   className?: string;
 }) => {
@@ -49,8 +52,19 @@ export const HoverEffect = ({
             )}
           </AnimatePresence>
           <Card>
+            <div className="p-2 flex flex-row justify-between">
+              <FolderClosed
+                className=" h-6 w-6 sm:h-7
+                  sm:w-7 text-[#64ffda] "
+              />
+
+              <a target="_blank" href={item.link}>
+                <IoLogoGithub className=" h-6 w-6  text-[#ccd6f6] " />
+              </a>
+            </div>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
+            <CardTechStack>{item.techStack}</CardTechStack>
           </Card>
         </Link>
       ))}
@@ -68,7 +82,7 @@ export const Card = ({
   return (
     <div
       className={cn(
-        "rounded-2xl h-96 w-full p-4 overflow-hidden bg-black border border-transparent relative z-20",
+        "rounded-2xl h-96 w-full p-4 overflow-hidden bg-zinc-900 border border-transparent relative z-20",
         className
       )}
     >
@@ -87,7 +101,10 @@ export const CardTitle = ({
 }) => {
   return (
     <h4
-      className={cn("text-[#ccd6f6] font-bold tracking-wide mt-4", className)}
+      className={cn(
+        "p-2 text-[#ccd6f6] text-[24px] font-bold tracking-wide mt-4",
+        className
+      )}
     >
       {children}
     </h4>
@@ -103,7 +120,25 @@ export const CardDescription = ({
   return (
     <p
       className={cn(
-        "mt-8 text-[#8892b0] tracking-wide leading-relaxed text-sm",
+        "mt-8 p-2 text-[18px] text-[#8892b0] tracking-wide leading-relaxed text-sm",
+        className
+      )}
+    >
+      {children}
+    </p>
+  );
+};
+export const CardTechStack = ({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) => {
+  return (
+    <p
+      className={cn(
+        "mt-8 p-2 text-[16px] text-[#8892b0] tracking-wide leading-relaxed text-sm",
         className
       )}
     >
