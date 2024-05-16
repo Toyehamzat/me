@@ -17,7 +17,7 @@ function About() {
   const two = (
     <p className="pt-4">
       Outside of coding, I keenly follow the developments in the world of
-      science, play a video games, listen to several genre of music, and consume
+      science, play video games, listen to several genres of music, and consume
       healthy media.
     </p>
   );
