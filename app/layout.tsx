@@ -20,7 +20,8 @@ export const metadata: Metadata = {
     title: "Anibi Adetoye Hamzat",
     description: "Portfolio",
     url: "https://tazmaheyot.vercel.app",
-    images: "https://pin.it/7jS3cPWXp",
+    images:
+      "https://i.pinimg.com/564x/6e/83/84/6e8384dc3aa8340856d743712ef8b3db.jpg",
   },
 };
 export default function RootLayout({
