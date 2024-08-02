@@ -73,7 +73,7 @@ function About() {
                 <div
                   className="text-base !m-0 !p-0 font-normal bg-cover bg-center bg-no-repeat rounded-lg h-[20rem] w-[20rem]"
                   style={{
-                    backgroundImage: 'url("image/matric.jpg")',
+                    backgroundImage: 'url("image/thanksgiving.jpg")',
                   }}
                 ></div>
               </div>
