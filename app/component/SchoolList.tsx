@@ -5,7 +5,7 @@ export function SchoolList() {
   const experienceItems = {
     "Babcock University": {
       SchoolTitle: "Bsc. Software Enigineering @",
-      duration: "JAN 2020 - JULY 2024",
+      duration: "JAN 2020 - JUL 2024",
       desc: ["Babcock University, Ilishan-Remo, Ogun State."],
     },
   };
