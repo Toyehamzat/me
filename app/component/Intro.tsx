@@ -49,7 +49,12 @@ function Intro() {
                 </div>
               </button>
             </Link>
-            {/* <a href="" download="CV">
+            <Link
+              href="/assets/Anibi adetoye hamzat-CV.pdf"
+              download="Anibi adetoye hamzat-CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="p-[2px] relative">
                 <div className="absolute inset-0 bg-gradient-to-r to-[#64ffda] from-[#e6f1ff] rounded-lg" />
                 <div className="px-8 py-4 flex items-center gap-1 text-center bg-black text-2xl cursor-pointer font-extrabold rounded-[6px] text-[#64ffda] hover:bg-[#233554]  relative group transition duration-200">
@@ -57,7 +62,7 @@ function Intro() {
                   {"Download CV"}
                 </div>
               </button>
-            </a> */}
+            </Link>
           </div>
         </div>
       </Reveal>
