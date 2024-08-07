@@ -10,11 +10,11 @@ const FractalTree = dynamic(() => import("@/app/component/FractualTree"), {
 
 const words = [
   {
-    text: "hi,",
+    text: "Hello!,",
     className: "text-4xl md:text-7xl text-[#ccd6f6]",
   },
   {
-    text: "hamzat",
+    text: "Adetoye Anibi",
     className: " text-4xl md:text-7xl text-[#64ffda] font-bold",
   },
   {
@@ -39,7 +39,7 @@ function Intro() {
             reality. Let&apos;s collaborate and create something extraordinary
             together!
           </div>
-          <div className="flex gap-2 items-center justify-center text-center">
+          <div className="flex gap-3 items-center justify-center text-center">
             <Link href="mailto:anibiseun@gmail.com">
               <button className="p-[2px] relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#64ffda] to-[#e6f1ff] rounded-lg" />
