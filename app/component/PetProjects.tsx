@@ -6,6 +6,28 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 function Pet() {
   const projects = [
     {
+      title: "Bauble",
+      description:
+        "A collaborative project management platform tailored for students, facilitating seamless teamwork and task organization.",
+      link: "https://github.com/baubleproject/bauble.git",
+      techStack: "NEXT.JS, POSTGRESQL, PRISMA",
+    },
+    {
+      title: "Apple-ology",
+      description:
+        "An elegant e-commerce platform exclusively dedicated to Apple products, utilizing local storage for a smooth shopping experience.",
+      link: "https://github.com/Toyehamzat/Apple-ology.git",
+      techStack: "REACT.JS",
+    },
+    {
+      title: "Tasklify",
+      description:
+        "A prelude to my final year project, Tasklify streamlines task management with features like user authentication, database integration, and more.",
+      link: "https://github.com/Toyehamzat/tasklify.git",
+      techStack: "NEXT.JS, PRISMA, CLERK, MYSQL",
+    },
+
+    {
       title: "News App",
       description:
         "A mobile application providing up-to-date news articles from various sources, offering users a convenient way to stay informed on current events.",
@@ -25,27 +47,6 @@ function Pet() {
         "A dynamic blogging platform built with server-side rendering (SSR) in Next.js, enabling users to create, publish, and share articles seamlessly.",
       link: "https://github.com/Toyehamzat/blog-website.git",
       techStack: "NEXT.JS",
-    },
-    {
-      title: "Apple-ology",
-      description:
-        "An elegant e-commerce platform exclusively dedicated to Apple products, utilizing local storage for a smooth shopping experience.",
-      link: "https://github.com/Toyehamzat/Apple-ology.git",
-      techStack: "REACT.JS",
-    },
-    {
-      title: "Bauble",
-      description:
-        "A collaborative project management platform tailored for students, facilitating seamless teamwork and task organization.",
-      link: "https://github.com/baubleproject/bauble.git",
-      techStack: "NEXT.JS, POSTGRESQL, PRISMA",
-    },
-    {
-      title: "Tasklify",
-      description:
-        "A prelude to my final year project, Tasklify streamlines task management with features like user authentication, database integration, and more.",
-      link: "https://github.com/Toyehamzat/tasklify.git",
-      techStack: "NEXT.JS, PRISMA, CLERK, MYSQL",
     },
     {
       title: "Node Express Playground",
