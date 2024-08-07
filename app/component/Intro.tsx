@@ -33,7 +33,7 @@ function Intro() {
             One line at a time.
           </div>
           <div className="text-[#8892b0] text-xl sm:text-2xl text-center max-w-screen-sm mb-5">
-            I&apos;m a Lagos-based software engineer passionate about crafting
+            I&apos;m a Nigeria-based software engineer passionate about crafting
             impactful products. With a dedication to innovation and a knack for
             problem-solving, I thrive on challenges and turning ideas into
             reality. Let&apos;s collaborate and create something extraordinary
