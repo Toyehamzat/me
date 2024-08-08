@@ -32,6 +32,11 @@ function Footer() {
       url: "https://twitter.com/tazmaheyot",
     },
   ];
+
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+  const currentMonth = currentDate.toLocaleString("default", { month: "long" });
+  const currentDay = currentDate.getDate();
   return (
     <div>
       <Reveal>
@@ -47,7 +52,10 @@ function Footer() {
                 </a>
               ))}
             </div>
-            <div>All rights reserved. ©2024. </div>
+            <div>Thanks for visiting.</div>
+            <div>
+              {currentMonth} {currentDay}, {currentYear}.
+            </div>
           </div>
         </div>
       </Reveal>
