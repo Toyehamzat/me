@@ -49,17 +49,12 @@ function Intro() {
                 </div>
               </button>
             </Link>
-            <Link
-              href="/assets/Anibi adetoye hamzat-CV.pdf"
-              download="Anibi adetoye hamzat-CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="https://flowcv.com/resume/banhai568u" target="_blank">
               <button className="p-[2px] relative">
                 <div className="absolute inset-0 bg-gradient-to-r to-[#64ffda] from-[#e6f1ff] rounded-lg" />
                 <div className="px-4 py-2 sm:px-8 sm:py-4 flex items-center gap-1 text-center bg-black text-xl sm:text-2xl cursor-pointer font-extrabold rounded-[6px] text-[#64ffda] hover:bg-[#233554]  relative group transition duration-200">
                   <Mail className="h-5 w-7" />
-                  {"Download CV"}
+                  {"Resume"}
                 </div>
               </button>
             </Link>
