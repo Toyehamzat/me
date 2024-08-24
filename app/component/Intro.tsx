@@ -24,7 +24,7 @@ const words = [
 ];
 function Intro() {
   return (
-    <div className="pt-24 flex flex-col text-center items-center m-auto min-h-screen md:max-w-screen-xl">
+    <div className="pt-24 flex flex-col text-center items-center m-auto min-h-screen md:max-w-screen-xl z-10">
       <FractalTree />
       <Reveal>
         <TypewriterEffectSmooth words={words} />

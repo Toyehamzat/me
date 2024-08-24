@@ -53,9 +53,7 @@ function Footer() {
               ))}
             </div>
             <div>Thanks for visiting.</div>
-            <div>
-              {currentMonth} {currentDay}, {currentYear}.
-            </div>
+            <div>{currentYear}.</div>
           </div>
         </div>
       </Reveal>

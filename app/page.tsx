@@ -10,7 +10,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 export default function Home() {
   return (
     <TracingBeam className="px-6">
-      <main className="pt-10">
+      <main className="pt-10 z-50">
         <Intro />
         <About />
         <Experience />
