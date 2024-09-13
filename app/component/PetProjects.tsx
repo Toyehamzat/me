@@ -6,6 +6,13 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 function Pet() {
   const projects = [
     {
+      title: "Buy me Zobo",
+      description:
+        "BuyMeZobo.ng is dedicated to supporting Nigerian creators local initiatives through a unique approach—buying virtual zobos. Our platform allows users to show appreciation to their favorite artists, writers, influencers, and more, fostering a culture of encouragement and community support.",
+      link: "https://github.com/Toyehamzat/buymezobo",
+      techStack: "NEXT.JS,ELYSIA, POSTGRESQL, PRISMA,DOCKER...",
+    },
+    {
       title: "Bauble",
       description:
         "A collaborative project management platform tailored for students, facilitating seamless teamwork and task organization.",
@@ -13,11 +20,17 @@ function Pet() {
       techStack: "NEXT.JS, POSTGRESQL, PRISMA",
     },
     {
-      title: "Apple-ology",
+      title: "BMZ Admin portal",
+      description: "bmzportal portal is dedicated to buymezobo.ng core.",
+      link: "https://github.com/Toyehamzat/bmzportal",
+      techStack: "NEXT.JS,ELYSIA, POSTGRESQL, PRISMA...",
+    },
+    {
+      title: "BlogMaster",
       description:
-        "An elegant e-commerce platform exclusively dedicated to Apple products, utilizing local storage for a smooth shopping experience.",
-      link: "https://github.com/Toyehamzat/Apple-ology.git",
-      techStack: "REACT.JS",
+        "BlogMaster is a monorepo for a full-stack blogging platform, integrating both the backend API server and the frontend client.",
+      link: "https://github.com/Toyehamzat/blogMaster",
+      techStack: "NEXT.JS, EXPRESS, PRISMA, POSTGRESQL, TAILWINDCSS...",
     },
     {
       title: "Tasklify",
@@ -25,6 +38,13 @@ function Pet() {
         "A prelude to my final year project, Tasklify streamlines task management with features like user authentication, database integration, and more.",
       link: "https://github.com/Toyehamzat/tasklify.git",
       techStack: "NEXT.JS, PRISMA, CLERK, MYSQL",
+    },
+    {
+      title: "Apple-ology",
+      description:
+        "An elegant e-commerce platform exclusively dedicated to Apple products, utilizing local storage for a smooth shopping experience.",
+      link: "https://github.com/Toyehamzat/Apple-ology.git",
+      techStack: "REACT.JS",
     },
 
     {
