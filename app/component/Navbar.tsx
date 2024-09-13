@@ -26,7 +26,7 @@ export const Navbar = () => {
               as="button"
               className="bg-black  flex items-center"
             >
-              <div className="pb-1 cursor-pointer text-xl tracking-widest font-extrabold">
+              <div className=" cursor-pointer text-xl tracking-widest font-extrabold">
                 Hamzat
               </div>
             </HoverBorderGradient>
