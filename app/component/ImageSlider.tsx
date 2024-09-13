@@ -19,6 +19,14 @@ export function CarouselPlugin() {
   );
 
   const spotlightProjects = {
+    BuyMeZobo: {
+      title: "BMZ",
+      desc: "coming soon...",
+      techStack: "NEXT.JS, POSTGRESQL, PRISMA, ELYSIA, DOCKER...",
+      link: "https://github.com/Toyehamzat/buymezobo",
+      open: "https://www.buymezobo.ng",
+      image: "/image/bmz.png",
+    },
     Bauble: {
       title: "bauble",
       desc: "A student project collaboration platform.",
