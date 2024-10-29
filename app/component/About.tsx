@@ -41,7 +41,7 @@ function About() {
           <span className="section-title">/ about me</span>
         </div>
         <div className="flex flex-row">
-          <div className="text-base md:text-lg max-w-[600px] text-[#8892b0] m-0 text-justify ">
+          <div className="text-base md:text-xl max-w-[600px] text-[#8892b0] m-0 text-justify ">
             {one}
             {"Here are some technologies I have been working with:"}
             <ul className="pt-4 grid grid-cols-3 grid-flow-row-3 text-[20px]">

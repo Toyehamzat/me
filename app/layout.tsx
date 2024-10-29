@@ -4,7 +4,10 @@ import "./globals.css";
 import { Navbar } from "./component/Navbar";
 import Footer from "./component/footer";
 
-const font = NTR({ subsets: ["latin"], weight: "400" });
+const ntrFont = NTR({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export const metadata: Metadata = {
   title: "Anibi Adetoye Hamzat",
@@ -30,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={font.className} suppressHydrationWarning>
+    <html lang="en" className={ntrFont.className} suppressHydrationWarning>
       <body className=" bg-black !scroll-smooth ">
         <Navbar />
         {children}

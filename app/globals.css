@@ -14,6 +14,9 @@
   }
 }
 
+body {
+  font-family: var(--ntr-font);
+}
 .section-header {
   display: flex;
   padding-bottom: 42px;

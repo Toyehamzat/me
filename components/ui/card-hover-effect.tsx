@@ -4,6 +4,7 @@ import { FolderClosed } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import { IoLogoGithub } from "react-icons/io5";
+import { VscLiveShare } from "react-icons/vsc";
 
 export const HoverEffect = ({
   items,
@@ -13,6 +14,7 @@ export const HoverEffect = ({
     title: string;
     description: string;
     link: string;
+    liveLink?: string;
     techStack?: string;
   }[];
   className?: string;
@@ -27,8 +29,7 @@ export const HoverEffect = ({
       )}
     >
       {items.map((item, idx) => (
-        <Link
-          href={item?.link}
+        <div
           key={item?.link}
           className="relative group block p-[3px] h-full w-full"
           onMouseEnter={() => setHoveredIndex(idx)}
@@ -57,16 +58,22 @@ export const HoverEffect = ({
                 className=" h-6 w-6 sm:h-7
                   sm:w-7 text-[#64ffda] "
               />
-
-              <a target="_blank" href={item.link}>
-                <IoLogoGithub className=" h-6 w-6  text-[#ccd6f6] " />
-              </a>
+              <div className="flex space-x-2">
+                <a target="_blank" href={item.link}>
+                  <IoLogoGithub className=" h-6 w-6  text-[#ccd6f6] " />
+                </a>
+                {item.liveLink && (
+                  <a target="_blank" href={item.liveLink}>
+                    <VscLiveShare className=" h-6 w-6  text-[#ccd6f6]" />
+                  </a>
+                )}
+              </div>
             </div>
             <CardTitle>{item.title}</CardTitle>
             <CardDescription>{item.description}</CardDescription>
             <CardTechStack>{item.techStack}</CardTechStack>
           </Card>
-        </Link>
+        </div>
       ))}
     </div>
   );

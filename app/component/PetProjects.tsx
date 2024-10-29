@@ -8,8 +8,9 @@ function Pet() {
     {
       title: "Buy me Zobo",
       description:
-        "BuyMeZobo.ng is dedicated to supporting Nigerian creators local initiatives through a unique approach—buying virtual zobos. Our platform allows users to show appreciation to their favorite artists, writers, influencers, and more, fostering a culture of encouragement and community support.",
+        "BuyMeZobo is dedicated to supporting Nigerian creators local initiatives through a unique approach—buying virtual zobos.",
       link: "https://github.com/Toyehamzat/buymezobo",
+      liveLink: "https://buymezobo.ng/",
       techStack: "NEXT.JS,ELYSIA, POSTGRESQL, PRISMA,DOCKER...",
     },
     {
@@ -17,12 +18,14 @@ function Pet() {
       description:
         "A collaborative project management platform tailored for students, facilitating seamless teamwork and task organization.",
       link: "https://github.com/baubleproject/bauble.git",
+      liveLink: "https://baublespace.vercel.app/",
       techStack: "NEXT.JS, POSTGRESQL, PRISMA",
     },
     {
       title: "BMZ Admin portal",
       description: "bmzportal portal is dedicated to buymezobo.ng core.",
       link: "https://github.com/Toyehamzat/bmzportal",
+      liveLink: "https://bmzportal.vercel.app/",
       techStack: "NEXT.JS,ELYSIA, POSTGRESQL, PRISMA...",
     },
     {

@@ -35,7 +35,7 @@ function Intro() {
             <div className="text-center text-[#8892b0] text-3xl sm:text-4xl tracking-wide font-semibold">
               One line at a time.
             </div>
-            <div className="text-[#8892b0] text-base sm:text-xl tracking-tight text-center max-w-screen-sm mb-5 mt-2">
+            <div className="text-[#8892b0] text-base sm:text-[22px] tracking-tight text-center max-w-screen-sm mb-5 mt-2">
               I&apos;m a Nigeria-based software engineer passionate about
               crafting impactful products. With a dedication to innovation and a
               knack for problem-solving, I thrive on challenges and turning

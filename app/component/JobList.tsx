@@ -36,7 +36,7 @@ export function JobList() {
           </p>
           <p>{duration}</p>
           <Reveal>
-            <ul className="list-none pt-5 text-sm sm:text-[17px]">
+            <ul className="list-none pt-5 text-sm sm:text-xl">
               {desc.map((item, index) => (
                 <li className="relative pl-5" key={index}>
                   <span
