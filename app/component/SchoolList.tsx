@@ -15,14 +15,14 @@ export function SchoolList() {
       title: company.toUpperCase().replace(/\s+/g, "-"),
       value: company.toUpperCase().replace(/\s+/g, "-"), // Convert company name to lowercase and replace spaces with dashes
       content: (
-        <div className="w-full sm:w-[90%] overflow-hidden relative h-full rounded-2xl sm:pr-10 sm:pl-10 sm:pb-10 pl-5 pr-5 pb-10   font-bold text-[#8892b0] bg-black">
+        <div className="w-full sm:w-[90%] overflow-hidden relative h-full rounded-2xl sm:pr-10 sm:pl-10 sm:pb-10 pl-5 pr-5 pb-10  text-[#8892b0] bg-black">
           <p className="text-xl sm:text-2xl font-bold text-[#ccd6f6]">
             {SchoolTitle}
             <span className="text-[#64ffda]"> {company}</span>
           </p>
           <p>{duration}</p>
           <Reveal>
-            <ul className="list-none pt-5 text-[17px] sm:text-[18px]">
+            <ul className="list-none pt-5  text-sm sm:text-[17px]">
               {desc.map((item, index) => (
                 <li className="relative pl-5" key={index}>
                   <span
@@ -42,7 +42,7 @@ export function SchoolList() {
   );
 
   return (
-    <div className="h-[15rem] perspective:1000px relative b flex flex-col sm:flex-row md:max-w-screen-xl mx-auto w-full items-start justify-start">
+    <div className="h-[15rem] perspective:1000px relative b flex flex-col sm:flex-row mx-auto w-full items-start justify-start">
       <Tabs tabs={tabs} />
     </div>
   );

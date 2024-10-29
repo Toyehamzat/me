@@ -6,12 +6,10 @@ function About() {
   const one = (
     <p className="pb-4">
       I am Anibi Adetoye Hamzat, a{" "}
-      <b className="text-[17px] md:text-[21px] font-bold text-[#64ffda]">
-        Software Developer
-      </b>
-      , deeply passionate about crafting applications that tackle real-world
-      challenges and contribute positively to society. At the moment, I&apos;m
-      actively seeking new opportunities and Experience.
+      <b className="font-bold text-[#64ffda]">Software Developer</b>, deeply
+      passionate about crafting applications that tackle real-world challenges
+      and contribute positively to society. At the moment, I&apos;m actively
+      seeking new opportunities and Experience.
     </p>
   );
   const two = (
@@ -42,8 +40,8 @@ function About() {
         <div className="section-header">
           <span className="section-title">/ about me</span>
         </div>
-        <div className="flex flex-row items-center">
-          <div className="text-[18px] md:text-[22px] max-w-[600px] text-[#8892b0] m-0 text-justify ">
+        <div className="flex flex-row">
+          <div className="text-base md:text-lg max-w-[600px] text-[#8892b0] m-0 text-justify ">
             {one}
             {"Here are some technologies I have been working with:"}
             <ul className="pt-4 grid grid-cols-3 grid-flow-row-3 text-[20px]">
@@ -52,8 +50,7 @@ function About() {
                   <Reveal key={index}>
                     <li
                       key={index}
-                      className="list-disc text-[18px] relative pl-6" // Add relative positioning and left padding to create space for the ::before pseudo-element
-                      // Apply the color directly to the <li> element
+                      className="list-disc text-sm md:text-base relative pl-6"
                     >
                       <span
                         className="absolute left-0 top-1"
@@ -69,7 +66,7 @@ function About() {
             </ul>
             {two}
           </div>
-          <div className="h-[20rem] w-full  items-center justify-center pl-9 hidden md:flex ">
+          <div className="h-[20rem] w-full  items-start justify-center pl-9 hidden md:flex ">
             <PinContainer title="Nigeria." href="#">
               <div className="flex basis-full flex-col tracking-tight text-slate-100/50 sm:basis-1/2 w-[20rem] h-[20rem] ">
                 <div

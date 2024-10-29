@@ -3,13 +3,23 @@ import Reveal from "@/utils/Reaveal";
 
 export function JobList() {
   const experienceItems = {
+    Seamailer: {
+      jobTitle: "Fullstack Engineer @",
+      duration: "AUG 2024 - Present",
+      desc: [
+        "Developed and maintained backend APIs using Node.js and Express.",
+        "Developed and maintained frontend code with Vue.js.",
+        "Participated in agile development practices including daily standups, code reviews, and sprint planning.",
+        "Implemented unit tests to ensure code quality and reliability.",
+      ],
+    },
     "4Traderx": {
-      jobTitle: "Software Development Engineer intern @",
-      duration: "JAN 2023 - JULY 2023",
+      jobTitle: "Software Engineer Intern @",
+      duration: "JAN 2023 - JUL 2023",
       desc: [
         "Worked as a Front-end Developer by developing and debugging user interface components while also facilitating connections to our database.",
         "Collaborated with the development team to conceptualize, design and develop the product.",
-        "Created fully responsive UI components for various pages of our web application using JavaScript’s React.js library.",
+        "Created fully responsive UI components for various pages of our web application using JavaScript's React.js library.",
       ],
     },
   };
@@ -17,16 +27,16 @@ export function JobList() {
   const tabs = Object.entries(experienceItems).map(
     ([company, { jobTitle, duration, desc }]) => ({
       title: company.toUpperCase().replace(/\s+/g, "-"),
-      value: company.toUpperCase().replace(/\s+/g, "-"), // Convert company name to lowercase and replace spaces with dashes
+      value: company.toUpperCase().replace(/\s+/g, "-"),
       content: (
-        <div className="w-full sm:w-[90%] overflow-hidden relative h-full rounded-2xl sm:pr-10 sm:pl-10 sm:pb-10 pl-5 pr-5 pb-5   font-bold text-[#8892b0] bg-black">
+        <div className="w-full  overflow-hidden relative h-full rounded-2xl sm:pr-10 sm:pl-10 sm:pb-10 pl-5 pr-5 pb-5  text-[#8892b0] bg-black">
           <p className="text-xl sm:text-2xl font-bold text-[#ccd6f6]">
             {jobTitle}
-            <span className="text-[#64ffda]"> {company}</span>
+            <span className="text-[#64ffda]"> {company}.</span>
           </p>
           <p>{duration}</p>
           <Reveal>
-            <ul className="list-none pt-5 text-[17px] sm:text-[18px]">
+            <ul className="list-none pt-5 text-sm sm:text-[17px]">
               {desc.map((item, index) => (
                 <li className="relative pl-5" key={index}>
                   <span
@@ -46,7 +56,7 @@ export function JobList() {
   );
 
   return (
-    <div className="h-[40rem] sm:h-[20rem] perspective:1000px relative b flex flex-col sm:flex-row md:max-w-screen-xl mx-auto w-full items-start justify-start">
+    <div className="h-[40rem] sm:h-[20rem] perspective:1000px relative b flex flex-col sm:flex-row  mx-auto w-full items-start justify-start">
       <Tabs tabs={tabs} />
     </div>
   );
