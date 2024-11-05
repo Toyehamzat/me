@@ -46,6 +46,24 @@ export const metadata: Metadata = {
     ],
   },
 };
+const structuredData = {
+  "@context": "http://schema.org",
+  "@type": "Person",
+  name: "Anibi Adetoye Hamzat",
+  url: "https://tazmaheyot.vercel.app",
+  sameAs: [
+    "https://www.linkedin.com/in/adetoye-anibi-32830823b",
+    "https://github.com/Toyehamzat",
+  ],
+  jobTitle: "Software Developer",
+  worksFor: {
+    "@type": "Organization",
+    name: "Seamailer",
+    url: "https://seamailer.app/",
+  },
+  description:
+    "I am a passionate software developer with experience in building web applications",
+};
 
 export default function RootLayout({
   children,
@@ -56,13 +74,24 @@ export default function RootLayout({
     <html lang="en" className={ntrFont.className} suppressHydrationWarning>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="canonical" href="https://tazmaheyot.vercel.app" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+          name="apple-mobile-web-app-status-bar-style"
+          content="black-translucent"
+        />
+        <link rel="canonical" href="https://tazmaheyot.me" />
         <link rel="icon" href="/Logo.ico" sizes="32x32" />
         <link rel="icon" href="/Logo.ico" sizes="192x192" />
         <link rel="apple-touch-icon" href="/Logo.ico" />
         <link rel="manifest" href="/manifest.json" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
       </head>
-      <body className=" bg-black !scroll-smooth ">
+      <body className="bg-black !scroll-smooth">
         <Navbar />
         {children}
         <Footer />
