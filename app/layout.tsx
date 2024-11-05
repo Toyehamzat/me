@@ -22,11 +22,31 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Anibi Adetoye Hamzat",
     description: "Portfolio",
-    url: "https://tazmaheyot.vercel.app",
-    images:
+    url: "https://tazmaheyot.me",
+    images: [
+      {
+        url: "https://i.pinimg.com/564x/6e/83/84/6e8384dc3aa8340856d743712ef8b3db.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio Thumbnail",
+      },
+    ],
+    type: "website",
+    locale: "en_US",
+    siteName: "Anibi Adetoye Hamzat's Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@tazmaheyot",
+    creator: "@tazmaheyot",
+    title: "Anibi Adetoye Hamzat",
+    description: "Portfolio",
+    images: [
       "https://i.pinimg.com/564x/6e/83/84/6e8384dc3aa8340856d743712ef8b3db.jpg",
+    ],
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -34,6 +54,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={ntrFont.className} suppressHydrationWarning>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href="https://tazmaheyot.vercel.app" />
+        <link rel="icon" href="/Logo.ico" sizes="32x32" />
+        <link rel="icon" href="/Logo.ico" sizes="192x192" />
+        <link rel="apple-touch-icon" href="/Logo.ico" />
+        <link rel="manifest" href="/manifest.json" />
+      </head>
       <body className=" bg-black !scroll-smooth ">
         <Navbar />
         {children}
