@@ -1,3 +1,10 @@
+import nextPwa from "next-pwa";
+
+const withPWA = nextPwa({
+  dest: "public",
+  disable: process.env.NODE_ENV === "development", // Disable PWA in development
+});
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   webpack: (config, { isServer }) => {
@@ -19,4 +26,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default withPWA(nextConfig);
