@@ -102,7 +102,7 @@ function Pet() {
   ];
 
   return (
-    <div id="projects" className="min-h-[50vh] md:max-w-screen-xl pt-16 pb-24">
+    <div id="projects" className="min-h-[50vh] md:max-w-screen-xl pb-24">
       <Reveal>
         <div className="section-header">
           <span className="section-title">/ Pet Projects</span>
