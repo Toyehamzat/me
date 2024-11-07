@@ -3,9 +3,19 @@ import Reveal from "@/utils/Reaveal";
 
 export function JobList() {
   const experienceItems = {
+    "De-virtuosphere": {
+      jobTitle: "Frontend Engineer @",
+      duration: "OCTOBER 2024 - Present",
+      desc: [
+        "Developed fully responsive UI components with Next.js.",
+        "Improved user flow throughout the application, resulting in a more intuitive and seamless experience.",
+        "Participated in agile development practices including daily standups, code reviews, and sprint planning.",
+        "Improved collaboration and communication in a team-oriented environment.",
+      ],
+    },
     Seamailer: {
       jobTitle: "Fullstack Engineer @",
-      duration: "AUG 2024 - Present",
+      duration: "AUGUST 2024 - Present",
       desc: [
         "Developed and maintained backend APIs using Node.js and Express.",
         "Developed and maintained frontend code with Vue.js.",
@@ -15,7 +25,7 @@ export function JobList() {
     },
     "4Traderx": {
       jobTitle: "Software Engineer Intern @",
-      duration: "JAN 2023 - JUL 2023",
+      duration: "JANUARY 2023 - JULY 2023",
       desc: [
         "Worked as a Front-end Developer by developing and debugging user interface components while also facilitating connections to our database.",
         "Collaborated with the development team to conceptualize, design and develop the product.",
