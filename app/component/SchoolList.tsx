@@ -4,9 +4,9 @@ import Reveal from "@/utils/Reaveal";
 export function SchoolList() {
   const experienceItems = {
     "Babcock University": {
-      SchoolTitle: "Bsc. Software Enigineering @",
-      duration: "JAN 2020 - JUL 2024",
-      desc: ["Babcock University, Ilishan-Remo, Ogun State."],
+      SchoolTitle: "Bsc. Software Engineering @",
+      duration: "JANUARY 2020 - JULY 2024",
+      desc: ["Second Class Honors, Upper Division CGPA"],
     },
   };
 
