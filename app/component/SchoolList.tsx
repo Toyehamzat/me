@@ -6,7 +6,10 @@ export function SchoolList() {
     "Babcock University": {
       SchoolTitle: "Bsc. Software Engineering @",
       duration: "JANUARY 2020 - JULY 2024",
-      desc: ["Second Class Honors, Upper Division CGPA"],
+      desc: [
+        "Second Class Honors, Upper Division CGPA",
+        "Relevant Coursework: AI, Operating Systems, Linux Systems, Database Management, Human-System Interaction, Data Structures, Programming Languages",
+      ],
     },
   };
 
