@@ -13,6 +13,14 @@
     height: 100% !important;
   }
 }
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
 
 body {
   font-family: var(--ntr-font);
