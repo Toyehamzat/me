@@ -33,10 +33,6 @@ function Footer() {
     },
   ];
 
-  const currentDate = new Date();
-  const currentYear = currentDate.getFullYear();
-  const currentMonth = currentDate.toLocaleString("default", { month: "long" });
-  const currentDay = currentDate.getDate();
   return (
     <div>
       <Reveal>
@@ -53,7 +49,7 @@ function Footer() {
               ))}
             </div>
             <div>Thanks for visiting.</div>
-            <div>{currentYear}.</div>
+            <div>2025.</div>
           </div>
         </div>
       </Reveal>
