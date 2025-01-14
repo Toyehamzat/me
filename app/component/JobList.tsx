@@ -15,7 +15,7 @@ export function JobList() {
     },
     Seamailer: {
       jobTitle: "Fullstack Engineer @",
-      duration: "AUGUST 2024 - Present",
+      duration: "AUGUST 2024 - DECEMBER 2024",
       desc: [
         "Developed and maintained backend APIs using Node.js and Express.",
         "Developed and maintained frontend code with Vue.js.",
