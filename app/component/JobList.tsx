@@ -5,7 +5,7 @@ export function JobList() {
   const experienceItems = {
     "De-virtuosphere": {
       jobTitle: "Frontend Engineer @",
-      duration: "OCTOBER 2024 - Present",
+      duration: "OCTOBER 2024 - PRESENT",
       desc: [
         "Developed fully responsive UI components with Next.js.",
         "Improved user flow throughout the application, resulting in a more intuitive and seamless experience.",
