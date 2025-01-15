@@ -5,6 +5,7 @@ import Experience from "./component/Experience";
 import Education from "./component/Education";
 import PetProjects from "./component/PetProjects";
 import { StarsBackground } from "@/components/ui/stars-background";
+import { ShootingStars } from "@/components/ui/shooting-stars";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <PetProjects />
       </main>
       <StarsBackground />
+      <ShootingStars />
     </div>
   );
 }
