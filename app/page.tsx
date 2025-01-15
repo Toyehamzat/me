@@ -9,7 +9,7 @@ import { StarsBackground } from "@/components/ui/stars-background";
 export default function Home() {
   return (
     <div className="relative h-full">
-      <main className="pt-10 z-50 max-w-screen-lg m-auto px-6 ">
+      <main className="pt-10 max-w-screen-lg m-auto px-6 ">
         <Intro />
         <About />
         <Experience />

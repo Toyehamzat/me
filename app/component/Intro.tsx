@@ -25,7 +25,7 @@ const words = [
 function Intro() {
   return (
     <>
-      <div className="flex flex-col text-center justify-end m-auto h-full md:min-h-screen md:max-w-screen-xl z-10 md:pb-6 pt-14 md:pt-0">
+      <div className="flex flex-col text-center justify-end m-auto h-full md:min-h-screen md:max-w-screen-xl  md:pb-6 pt-14 md:pt-0">
         <div className="flex justify-center">
           <FractalTree />
         </div>
