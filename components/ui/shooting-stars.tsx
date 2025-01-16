@@ -48,7 +48,7 @@ export const ShootingStars: React.FC<ShootingStarsProps> = ({
   maxDelay = 4200,
   starColor = "#9E00FF",
   trailColor = "#2EB9DF",
-  starWidth = 20,
+  starWidth = 15,
   starHeight = 1,
   className,
 }) => {
