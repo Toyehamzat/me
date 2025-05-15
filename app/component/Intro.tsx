@@ -1,3 +1,4 @@
+"use client";
 import dynamic from "next/dynamic";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import Reveal from "@/utils/Reaveal";

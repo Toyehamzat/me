@@ -1,3 +1,4 @@
+"use client"
 import React from "react";
 import Reveal from "@/utils/Reaveal";
 import { CarouselPlugin } from "./ImageSlider";

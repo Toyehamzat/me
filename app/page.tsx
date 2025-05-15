@@ -1,4 +1,4 @@
-"use client";
+
 import Intro from "./component/Intro";
 import About from "./component/About";
 import Experience from "./component/Experience";
