@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { PinContainer } from "@/components/ui/PinContainer";
 import Reveal from "@/utils/Reaveal";
 
@@ -31,6 +32,13 @@ function About() {
     "tailwindcss",
     "Javascript ES6+",
   ];
+  const [randomImage, setRandomImage] = useState("");
+
+  useEffect(() => {
+    const images = ["icon.jpg", "geto.jpg", "unsplash.jpg", "thanksgiving.jpg"];
+    const randomIndex = Math.floor(Math.random() * images.length);
+    setRandomImage(images[randomIndex]);
+  }, []);
   return (
     <div
       id="about"
@@ -72,14 +80,7 @@ function About() {
                 <div
                   className="text-base !m-0 !p-0 font-normal bg-cover bg-center bg-no-repeat rounded-lg h-[20rem] w-[20rem]"
                   style={{
-                    backgroundImage: `url("image/${
-                      [
-                        "icon.jpg",
-                        "geto.jpg",
-                        "unsplash.jpg",
-                        "thanksgiving.jpg",
-                      ][Math.floor(Math.random() * 4)]
-                    }")`,
+                    backgroundImage: `url("image/${randomImage}")`,
                   }}
                 ></div>
               </div>
