@@ -19,37 +19,83 @@ export function CarouselPlugin() {
   );
 
   const spotlightProjects = {
+    "poneglyph-docs": {
+      title: "Poneglyph-docs",
+      desc: "A powerful document editor for seamless writing and collaboration",
+      techStack: "NEXT.JS, TAILWINDCSS, CONVEX, CLERK, LIVEBLOCKS",
+      link: "https://github.com/Toyehamzat/poneglyph-docs",
+      open: "https://poneglyph-docs.vercel.app/",
+      images: ["/image/poneglyph-docs.png"],
+      get image() {
+        return this.images[Math.floor(Math.random() * this.images.length)];
+      },
+    },
+    virtuobusiness: {
+      title: "Virtuo",
+      desc: "Secure identification, reliable attendance tracking, and seamless payment processing for educational institutions and businesses.",
+      techStack: "NEXT.JS, TAILWINDCSS",
+      link: undefined,
+      open: "https://v1.virtuobusiness.com/en",
+      images: ["/image/virtuo.png"],
+      get image() {
+        return this.images[Math.floor(Math.random() * this.images.length)];
+      },
+    },
+    "virtuo-dashboard": {
+      title: "Virtuo-school-management",
+      desc: "Secure identification, reliable attendance tracking, and seamless payment processing for educational institutions and businesses.",
+      techStack: "NEXT.JS, TAILWINDCSS",
+      link: undefined,
+      open: "https://v1.virtuobusiness.com/en",
+      images: ["/image/dashboard.png"],
+      get image() {
+        return this.images[Math.floor(Math.random() * this.images.length)];
+      },
+    },
+
     BuyMeZobo: {
       title: "BMZ",
-      desc: "coming soon...",
-      techStack: "NEXT.JS, POSTGRESQL, PRISMA, ELYSIA, DOCKER...",
+      desc: "Payment platform",
+      techStack: "NEXT.JS, POSTGRESQL, PRISMA, ELYSIA, DOCKER",
       link: "https://github.com/Toyehamzat/buymezobo",
       open: "https://www.buymezobo.ng",
-      image: "/image/bmz.png",
+      images: ["/image/bmz.png"],
+      get image() {
+        return this.images[Math.floor(Math.random() * this.images.length)];
+      },
     },
     Bauble: {
       title: "bauble",
-      desc: "A student project collaboration platform.",
+      desc: "Student project collaboration platform",
       techStack: "NEXT.JS, POSTGRESQL, PRISMA",
       link: "https://github.com/baubleproject/bauble.git",
       open: "https://baublespace.vercel.app/",
-      image: "/image/bauble.jpg",
+      images: ["/image/bauble.jpg"],
+      get image() {
+        return this.images[Math.floor(Math.random() * this.images.length)];
+      },
     },
     "Apple-ology": {
       title: "apple-ology",
-      desc: "an E-commerce application for apple devices(uses local storagge).",
+      desc: "E-commerce app for Apple devices",
       techStack: "REACT.JS",
       link: "https://github.com/Toyehamzat/Apple-ology.git",
       open: "apple-ology.vercel.app/",
-      image: "/image/appleology.jpg",
+      images: ["/image/appleology.jpg"],
+      get image() {
+        return this.images[Math.floor(Math.random() * this.images.length)];
+      },
     },
     "Not-netflix": {
       title: "not-netflix",
-      desc: "A clone to netflix.",
+      desc: "Netflix clone",
       techStack: "NEXT.JS, MONGODB, PRISMA",
       link: "https://github.com/Toyehamzat/not-netflix.git",
       open: "https://not-netflix-site.vercel.app/",
-      image: "/image/netflix.jpg",
+      images: ["/image/netflix.jpg"],
+      get image() {
+        return this.images[Math.floor(Math.random() * this.images.length)];
+      },
     },
   };
 
@@ -81,14 +127,16 @@ export function CarouselPlugin() {
                       {project.techStack}
                     </p>
                     <div className="flex flex-row items-center text-center">
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-[#ccd6f6] font-bold text-[11px] sm:text-[18px] hover:underline"
-                      >
-                        <Github />
-                      </a>
+                      {project.link && (
+                        <a
+                          href={project.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-[#ccd6f6] font-bold text-[11px] sm:text-[18px] hover:underline"
+                        >
+                          <Github />
+                        </a>
+                      )}
                       <a
                         href={project.open}
                         target="_blank"

@@ -6,6 +6,14 @@ import { HoverEffect } from "@/components/ui/card-hover-effect";
 function Pet() {
   const projects = [
     {
+      title: "Poneglyph-docs",
+      description:
+        "A powerful document editor for seamless writing and collaboration",
+      techStack: "NEXT.JS, TAILWINDCSS, CONVEX, CLERK, LIVEBLOCKS",
+      link: "https://github.com/Toyehamzat/poneglyph-docs",
+      liveLink: "https://poneglyph-docs.vercel.app/",
+    },
+    {
       title: "Buy me Zobo",
       description:
         "BuyMeZobo is dedicated to supporting Nigerian creators local initiatives through a unique approach—buying virtual zobos.",
