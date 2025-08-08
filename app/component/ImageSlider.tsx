@@ -1,7 +1,6 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 
-import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
   CarouselContent,
@@ -9,9 +8,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 import { Github, PackageOpen } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 export function CarouselPlugin() {
   const plugin = React.useRef(
@@ -19,6 +16,17 @@ export function CarouselPlugin() {
   );
 
   const spotlightProjects = {
+    "Turva": {
+      title: "Turva",
+      desc: "A crowd sourcing security platform for community safety",
+      techStack: "NEXT.JS, TAILWINDCSS",
+      link: "https://turva.co/",
+      open: "https://turva.co/",
+      images: ["/image/turva.png"],
+      get image() {
+        return this.images[Math.floor(Math.random() * this.images.length)];
+      },
+    },
     "poneglyph-docs": {
       title: "Poneglyph-docs",
       desc: "A powerful document editor for seamless writing and collaboration",

@@ -3,6 +3,20 @@ import Reveal from "@/utils/Reaveal";
 
 export function JobList() {
   const experienceItems = {
+    "Atlax exchange": {
+      jobTitle: "Frontend Engineer @",
+      duration: "MAY 2025 - PRESENT",
+      desc: [
+        "Built responsive dashboard screen from UI designs",
+        "Created wallet screen with tables and stats for cash inflow/outflow",
+        "Developed collections screen with tables and stats for credits",
+        "Built payout screen with tables and stats for debits",
+        "Add money transfer feature (local)",
+        "Send money transfer feature(local, international)",
+        "Integrated backend APIs for sending money with proper requests and payloads",
+        "Made all screens responsive and functional",
+      ],
+    },
     "De-virtuosphere": {
       jobTitle: "Frontend Engineer @",
       duration: "OCTOBER 2024 - PRESENT",
