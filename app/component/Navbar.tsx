@@ -15,7 +15,11 @@ export const Navbar = () => {
 
   // const triggerPostHogEvent = () => {
   //   try {
-  //     posthog.capture("my event", { property: "value" });
+  //     posthog.capture("manual_event", {
+  //       source: "navbar",
+  //       triggered_at: new Date().toISOString(),
+  //     });
+  //     console.log("PostHog: manual_event captured");
   //   } catch (e) {
   //     console.error("PostHog capture failed", e);
   //   }
