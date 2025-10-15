@@ -3,6 +3,7 @@ import { NTR } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./component/Navbar";
 import Footer from "./component/footer";
+import { PostHogProvider } from "../components/providers/posthog-provider";
 
 const ntrFont = NTR({
   subsets: ["latin"],
@@ -92,9 +93,11 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-black !scroll-smooth">
-        <Navbar />
-        {children}
-        <Footer />
+        <PostHogProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </PostHogProvider>
       </body>
     </html>
   );

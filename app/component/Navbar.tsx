@@ -1,5 +1,6 @@
 "use client";
 import { Linkedin, Mail } from "lucide-react";
+import posthog from "posthog-js";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
@@ -11,6 +12,14 @@ export const Navbar = () => {
   const scrollToHome = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  // const triggerPostHogEvent = () => {
+  //   try {
+  //     posthog.capture("my event", { property: "value" });
+  //   } catch (e) {
+  //     console.error("PostHog capture failed", e);
+  //   }
+  // };
 
   return (
     <nav
@@ -55,6 +64,13 @@ export const Navbar = () => {
           <Link className="hidden sm:block" href="mailto:anibiseun@gmail.com">
             <Mail className="h-5 w-5 transition hover:text-[#64ffda] " />
           </Link>
+          {/* <button
+            onClick={triggerPostHogEvent}
+            title="Trigger PostHog event"
+            className="ml-2 text-xs md:text-sm px-2 py-1 rounded-md bg-transparent border border-neutral-700 hover:border-[#64ffda] hover:text-[#64ffda] transition"
+          >
+            Track
+          </button> */}
           <Link href="https://github.com/Toyehamzat" target="_blank">
             <IoLogoGithub className="h-5 w-5 transition hover:text-[#64ffda]" />
           </Link>
